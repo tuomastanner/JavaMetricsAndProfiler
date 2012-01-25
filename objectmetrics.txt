@@ -1,0 +1,212 @@
+----------------------
+CLASS: metrics.Analyzer
+TYPE: class
+FROM FILE: src\metrics\Analyzer.java
+
+WMC: 0
+DIT: 0
+NOC: 4
+CHILDREN: AnalyzerLines AnalyzerObjectMetrics AnalyzerProfiler AnalyzerStructure 
+
+METHOD: public Analyzer(Logger logger)
+  COMPLEXITY: 0
+
+
+----------------------
+CLASS: metrics.AnalyzerLines
+TYPE: class
+FROM FILE: src\metrics\AnalyzerLines.java
+
+WMC: 15
+DIT: 1
+INHERITANCE: Analyzer > AnalyzerLines
+
+NOC: 0
+
+METHOD: public AnalyzerLines(Logger logger)
+  COMPLEXITY: 0
+METHOD: public String analyzeFile(File file, Object additionalParam)
+  COMPLEXITY: 10
+METHOD: public static int findToken(String token, String row, int startFrom)
+  COMPLEXITY: 5
+
+
+----------------------
+CLASS: metrics.AnalyzerObjectMetrics
+TYPE: class
+FROM FILE: src\metrics\AnalyzerObjectMetrics.java
+
+WMC: 23
+DIT: 1
+INHERITANCE: Analyzer > AnalyzerObjectMetrics
+
+NOC: 0
+
+METHOD: public AnalyzerObjectMetrics(Logger logger)
+  COMPLEXITY: 0
+METHOD: public String analyzeFile(File file, Object additionalParam)
+  COMPLEXITY: 23
+
+
+----------------------
+CLASS: metrics.AnalyzerProfiler
+TYPE: class
+FROM FILE: src\metrics\AnalyzerProfiler.java
+
+WMC: 21
+DIT: 1
+INHERITANCE: Analyzer > AnalyzerProfiler
+
+NOC: 0
+
+METHOD: public AnalyzerProfiler(Logger logger)
+  COMPLEXITY: 0
+METHOD: public String analyzeFile(File file, Object additionalParam)
+  COMPLEXITY: 21
+
+
+----------------------
+CLASS: metrics.AnalyzerStructure
+TYPE: class
+FROM FILE: src\metrics\AnalyzerStructure.java
+
+WMC: 17
+DIT: 1
+INHERITANCE: Analyzer > AnalyzerStructure
+
+NOC: 0
+
+METHOD: public AnalyzerStructure(Logger logger)
+  COMPLEXITY: 0
+METHOD: public String analyzeFile(File file, Object additionalParam)
+  COMPLEXITY: 17
+
+
+----------------------
+CLASS: metrics.ClassInfo
+TYPE: class
+FROM FILE: src\metrics\ClassInfo.java
+
+WMC: 0
+DIT: 0
+NOC: 0
+
+
+
+----------------------
+CLASS: metrics.GetMetrics
+TYPE: class
+FROM FILE: src\metrics\GetMetrics.java
+
+WMC: 19
+DIT: 0
+NOC: 0
+
+METHOD: public static void main(String[] args)
+  COMPLEXITY: 16
+METHOD: public static String processFiles(File startDir, Analyzer analyzer, Object additionalParam)
+  COMPLEXITY: 3
+
+
+----------------------
+CLASS: tools.Logger
+TYPE: class
+FROM FILE: src\tools\Logger.java
+
+WMC: 2
+DIT: 0
+NOC: 0
+
+METHOD: public Logger(PrintStream out, String prefix, int logLevel)
+  COMPLEXITY: 0
+METHOD: public void log(String msg, int level)
+  COMPLEXITY: 1
+METHOD: public void log(String msg, Throwable err, int level)
+  COMPLEXITY: 1
+
+
+----------------------
+CLASS: metrics.Profiler
+TYPE: class
+FROM FILE: src\metrics\Profiler.java
+
+WMC: 0
+DIT: 0
+NOC: 0
+
+METHOD: static
+  COMPLEXITY: 0
+METHOD: public static void write(String row)
+  COMPLEXITY: 0
+METHOD: public static void close()
+  COMPLEXITY: 0
+
+
+----------------------
+CLASS: metrics.ProfilerClassInfo
+TYPE: class
+FROM FILE: src\metrics\ProfilerClassInfo.java
+
+WMC: 0
+DIT: 0
+NOC: 0
+
+
+
+----------------------
+CLASS: metrics.ProfilerReport
+TYPE: class
+FROM FILE: src\metrics\ProfilerReport.java
+
+WMC: 31
+DIT: 0
+NOC: 0
+
+METHOD: public static void main(String[] args) throws IOException
+  COMPLEXITY: 31
+
+
+----------------------
+CLASS: metrics.TokenFinder
+TYPE: class
+FROM FILE: src\metrics\TokenFinder.java
+
+WMC: 17
+DIT: 0
+NOC: 0
+
+METHOD: public TokenFinder(String text, String[] tokens)
+  COMPLEXITY: 1
+METHOD: public int[] getNextToken(int startFrom)
+  COMPLEXITY: 14
+METHOD: public int findToken(String token, int startFrom)
+  COMPLEXITY: 0
+METHOD: public int findToken(String token, String text, int startFrom)
+  COMPLEXITY: 0
+METHOD: public int findPrevious(char c, int startFrom)
+  COMPLEXITY: 2
+
+
+----------------------
+CLASS: tools.Tools
+TYPE: class
+FROM FILE: src\tools\Tools.java
+
+WMC: 3
+DIT: 0
+NOC: 0
+
+METHOD: public static BufferedReader openTextFile(File file)
+  COMPLEXITY: 1
+METHOD: public static BufferedWriter openFileWriter(File file, boolean append) throws IOException
+  COMPLEXITY: 0
+METHOD: public static String readFile(File file)
+  COMPLEXITY: 1
+METHOD: public static boolean saveFile(String fileName, String contents, boolean append)
+  COMPLEXITY: 0
+METHOD: public static int parseInt(String str)
+  COMPLEXITY: 0
+METHOD: public static int parseInt(String str, int defValue)
+  COMPLEXITY: 1
+
+

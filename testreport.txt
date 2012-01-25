@@ -1,0 +1,338 @@
+----------------------
+CLASS: metrics.Analyzer
+WMC: 0
+DIT: 0
+NOC: 4
+
+MINIMUM EXECUTION TIME: 0
+MAXIMUM EXECUTION TIME: 0
+TOTAL EXECUTION TIME: 0
+
+ METHOD: public Analyzer(Logger logger)
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 7
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+----------------------
+CLASS: metrics.AnalyzerLines
+WMC: 15
+DIT: 1
+NOC: 0
+
+MINIMUM EXECUTION TIME: 0
+MAXIMUM EXECUTION TIME: 16
+TOTAL EXECUTION TIME: 109
+
+ METHOD: public AnalyzerLines(Logger logger)
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 2
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public String analyzeFile(File file, Object additionalParam)
+  METHOD COMPLEXITY: 10
+  CALL COUNT: 23
+  TOTAL EXECUTION TIME: 93
+  AVERAGE EXECUTION TIME: 4
+
+
+ METHOD: public static int findToken(String token, String row, int startFrom)
+  METHOD COMPLEXITY: 5
+  CALL COUNT: 2794
+  TOTAL EXECUTION TIME: 16
+  AVERAGE EXECUTION TIME: 0
+
+
+----------------------
+CLASS: metrics.AnalyzerObjectMetrics
+WMC: 23
+DIT: 1
+NOC: 0
+
+MINIMUM EXECUTION TIME: 0
+MAXIMUM EXECUTION TIME: 16
+TOTAL EXECUTION TIME: 78
+
+ METHOD: public AnalyzerObjectMetrics(Logger logger)
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 3
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public String analyzeFile(File file, Object additionalParam)
+  METHOD COMPLEXITY: 23
+  CALL COUNT: 33
+  TOTAL EXECUTION TIME: 78
+  AVERAGE EXECUTION TIME: 2
+
+
+----------------------
+CLASS: metrics.AnalyzerProfiler
+WMC: 21
+DIT: 1
+NOC: 0
+
+MINIMUM EXECUTION TIME: 0
+MAXIMUM EXECUTION TIME: 0
+TOTAL EXECUTION TIME: 0
+
+ METHOD: public AnalyzerProfiler(Logger logger)
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 0
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public String analyzeFile(File file, Object additionalParam)
+  METHOD COMPLEXITY: 21
+  CALL COUNT: 0
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+----------------------
+CLASS: metrics.AnalyzerStructure
+WMC: 17
+DIT: 1
+NOC: 0
+
+MINIMUM EXECUTION TIME: 0
+MAXIMUM EXECUTION TIME: 16
+TOTAL EXECUTION TIME: 93
+
+ METHOD: public AnalyzerStructure(Logger logger)
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 2
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public String analyzeFile(File file, Object additionalParam)
+  METHOD COMPLEXITY: 17
+  CALL COUNT: 23
+  TOTAL EXECUTION TIME: 93
+  AVERAGE EXECUTION TIME: 4
+
+
+----------------------
+CLASS: metrics.ClassInfo
+WMC: 0
+DIT: 0
+NOC: 0
+
+MINIMUM EXECUTION TIME: 0
+MAXIMUM EXECUTION TIME: 0
+TOTAL EXECUTION TIME: 0
+
+----------------------
+CLASS: metrics.GetMetrics
+WMC: 19
+DIT: 0
+NOC: 0
+
+MINIMUM EXECUTION TIME: 0
+MAXIMUM EXECUTION TIME: 78
+TOTAL EXECUTION TIME: 438
+
+ METHOD: public static String processFiles(File startDir, Analyzer analyzer, Object additionalParam)
+  METHOD COMPLEXITY: 3
+  CALL COUNT: 29
+  TOTAL EXECUTION TIME: 32
+  AVERAGE EXECUTION TIME: 1
+
+
+ METHOD: public static void main(String[] args)
+  METHOD COMPLEXITY: 16
+  CALL COUNT: 7
+  TOTAL EXECUTION TIME: 406
+  AVERAGE EXECUTION TIME: 58
+
+
+----------------------
+CLASS: metrics.Profiler
+WMC: 0
+DIT: 0
+NOC: 0
+
+MINIMUM EXECUTION TIME: 0
+MAXIMUM EXECUTION TIME: 0
+TOTAL EXECUTION TIME: 0
+
+ METHOD: public static void close()
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 0
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public static void write(String row)
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 0
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: static
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 0
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+----------------------
+CLASS: metrics.ProfilerClassInfo
+WMC: 0
+DIT: 0
+NOC: 0
+
+MINIMUM EXECUTION TIME: 0
+MAXIMUM EXECUTION TIME: 0
+TOTAL EXECUTION TIME: 0
+
+----------------------
+CLASS: metrics.ProfilerReport
+WMC: 31
+DIT: 0
+NOC: 0
+
+MINIMUM EXECUTION TIME: 0
+MAXIMUM EXECUTION TIME: 0
+TOTAL EXECUTION TIME: 0
+
+ METHOD: public static void main(String[] args) throws IOException
+  METHOD COMPLEXITY: 31
+  CALL COUNT: 0
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+----------------------
+CLASS: metrics.TokenFinder
+WMC: 17
+DIT: 0
+NOC: 0
+
+MINIMUM EXECUTION TIME: 0
+MAXIMUM EXECUTION TIME: 16
+TOTAL EXECUTION TIME: 62
+
+ METHOD: public TokenFinder(String text, String[] tokens)
+  METHOD COMPLEXITY: 1
+  CALL COUNT: 56
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public int findPrevious(char c, int startFrom)
+  METHOD COMPLEXITY: 2
+  CALL COUNT: 111
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public int findToken(String token, String text, int startFrom)
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 0
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public int findToken(String token, int startFrom)
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 162
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public int[] getNextToken(int startFrom)
+  METHOD COMPLEXITY: 14
+  CALL COUNT: 2097
+  TOTAL EXECUTION TIME: 62
+  AVERAGE EXECUTION TIME: 0
+
+
+----------------------
+CLASS: tools.Logger
+WMC: 2
+DIT: 0
+NOC: 0
+
+MINIMUM EXECUTION TIME: 0
+MAXIMUM EXECUTION TIME: 16
+TOTAL EXECUTION TIME: 78
+
+ METHOD: public Logger(PrintStream out, String prefix, int logLevel)
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 7
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public void log(String msg, Throwable err, int level)
+  METHOD COMPLEXITY: 1
+  CALL COUNT: 0
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public void log(String msg, int level)
+  METHOD COMPLEXITY: 1
+  CALL COUNT: 5964
+  TOTAL EXECUTION TIME: 78
+  AVERAGE EXECUTION TIME: 0
+
+
+----------------------
+CLASS: tools.Tools
+WMC: 3
+DIT: 0
+NOC: 0
+
+MINIMUM EXECUTION TIME: 0
+MAXIMUM EXECUTION TIME: 16
+TOTAL EXECUTION TIME: 48
+
+ METHOD: public static BufferedReader openTextFile(File file)
+  METHOD COMPLEXITY: 1
+  CALL COUNT: 23
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public static BufferedWriter openFileWriter(File file, boolean append) throws IOException
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 0
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public static String readFile(File file)
+  METHOD COMPLEXITY: 1
+  CALL COUNT: 56
+  TOTAL EXECUTION TIME: 48
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public static boolean saveFile(String fileName, String contents, boolean append)
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 0
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public static int parseInt(String str)
+  METHOD COMPLEXITY: 0
+  CALL COUNT: 0
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0
+
+
+ METHOD: public static int parseInt(String str, int defValue)
+  METHOD COMPLEXITY: 1
+  CALL COUNT: 0
+  TOTAL EXECUTION TIME: 0
+  AVERAGE EXECUTION TIME: 0

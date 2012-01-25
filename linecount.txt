@@ -1,0 +1,15 @@
+filename	physical	logical
+src\metrics\Analyzer.java	19	8
+src\metrics\AnalyzerLines.java	136	80
+src\metrics\AnalyzerObjectMetrics.java	182	125
+src\metrics\AnalyzerProfiler.java	197	135
+src\metrics\AnalyzerStructure.java	142	103
+src\metrics\ClassInfo.java	15	12
+src\metrics\GetMetrics.java	134	81
+src\metrics\Profiler.java	37	20
+src\metrics\ProfilerClassInfo.java	16	10
+src\metrics\ProfilerReport.java	247	177
+src\metrics\TokenFinder.java	144	76
+src\tools\Logger.java	39	18
+src\tools\Tools.java	73	46
+
